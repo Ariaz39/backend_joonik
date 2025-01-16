@@ -18,7 +18,7 @@ class CheckApiKey
 
         if (!$providedKey || $providedKey !== config('services.api_key')) {
             return response()->json([
-                'error' => 'Invalid or missing API key.'
+                'error' => 'Api Key no valida o no ingresada.'
             ], 401);
         }
 

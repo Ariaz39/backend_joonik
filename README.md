@@ -16,7 +16,7 @@ Este proyecto es una API de Locations construida con Laravel. En este proyecto, 
 Si aún no has clonado el repositorio del proyecto, clónalo utilizando el siguiente comando:
 
 ```bash
-git clone https://github.com/Ariaz39/backend_joonik.git
+git clone --branch develop --single-branch https://github.com/Ariaz39/backend_joonik.git
 ```
 ### 2. Ingresar a la carpeta del proyecto
 

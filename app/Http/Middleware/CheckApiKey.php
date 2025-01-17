@@ -8,13 +8,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CheckApiKey
 {
-    /**
-     * Handle an incoming request.
-     */
     public function handle(Request $request, Closure $next): Response
     {
         $providedKey = $request->header('x-api-key')
-            ?? $request->bearerToken(); // soporta 'Authorization: Bearer <token>' o 'x-api-key'
+            ?? $request->bearerToken();
 
         if (!$providedKey || $providedKey !== config('services.api_key')) {
             return response()->json([

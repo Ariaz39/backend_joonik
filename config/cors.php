@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:3000', 'http://frontend_joonik.test'],
+    'allowed_origins' => ['http://localhost:5173', 'http://localhost:5174', 'http://frontend_joonik.test'],
 
     'allowed_origins_patterns' => [],
 
